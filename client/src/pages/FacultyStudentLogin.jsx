@@ -11,7 +11,7 @@ import {useAlert} from 'react-alert'
 const Container = styled.div` 
 width:100vw;
 height:100vh;
-background:linear-gradient(75deg,#0077b6 50%,#ffffff 50%);
+background:linear-gradient(35deg,Orange 50%,Yellow 50%);
 display:flex;
 align-items: center;
 justify-content: center;
@@ -22,8 +22,8 @@ width: 80%;
 height: 70%;
 display: flex;
 background-color:white;
-border-radius:10px;
-color:#0077b6;
+border-radius:30px;
+color:white;
 `
 const Left = styled.div` 
 flex:0.6;
@@ -31,12 +31,13 @@ display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left:10px;
+  background:linear-gradient(-15deg,tomato 50%,aqua 50%)
 `
 
 const Logo = styled.h3`
 font-size: 50px;
 font-weight: 800;
-color: #0077b6;
+color: White;
 margin-bottom: 10px;
 `
 
@@ -50,6 +51,7 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   padding-right:10px;
+  background:linear-gradient(-15deg,tomato 50%,aqua 50%)
 `
 
 const LoginBox = styled.form` 
@@ -63,18 +65,18 @@ justify-content: space-between;
 const LoginInput = styled.input`
 height: 50px;
 border-radius: 10px;
-border: 1px solid #0077b6;
+border: 1px solid green;
 font-size: 18px;
 padding-left: 20px;
 :focus{
-    outline: 1px solid #03045e;
+    outline: 1px solid green;
 }`
 
 const LoginButton = styled.button`
 height:50px;
 border-radius:10px;
 border:none;
-background-color: #0077b6;
+background-color: #DC4C64;
 color: white;
     font-size: 20px;
     font-weight: 500;
@@ -87,7 +89,7 @@ const LoginInfo = styled.p`
     cursor: pointer;
     >a{
         text-decoration:none;
-        color:tomato;
+        color:blue;
     }
 `
 
@@ -185,14 +187,14 @@ const FacultyStudentLogin = () => {
     <Container>
         <Wrapper>
             <Left>
-                <Logo>Smart ERP</Logo>
-                <Desc>Track your academics and stay connected with your peers</Desc>
+                <Logo>University ERP</Logo>
+                <Desc>Student/Faculty Login</Desc>
             </Left>
             <Right>
                 {
                    isStudentLogin? (
                        <LoginBox>
-                           <LoginInput placeholder="Student GR Number" type="text" onChange={(e) => setStudentRegNum(e.target.value)} required/>
+                           <LoginInput placeholder="Student Registered Number" type="text" onChange={(e) => setStudentRegNum(e.target.value)} required/>
                            <LoginInput placeholder="Password" type="password" onChange={(e) => setStudentPassword(e.target.value)} required/>
                            <LoginButton type="submit" onClick={studentLoginHandler}>
                                Log In
@@ -208,7 +210,7 @@ const FacultyStudentLogin = () => {
                        </LoginBox>
                    ):(
                       <LoginBox>
-                           <LoginInput placeholder="Faculty GR Number" onChange={(e) => setFacultyRegNum(e.target.value)} type="text" required/>
+                           <LoginInput placeholder="Faculty Registered Number" onChange={(e) => setFacultyRegNum(e.target.value)} type="text" required/>
                            <LoginInput placeholder="Password" onChange={(e) => setFacultyPassword(e.target.value)} type="password" required/>
                            <LoginButton type="submit" onClick={facultyLoginHandler}>
                                Log In
