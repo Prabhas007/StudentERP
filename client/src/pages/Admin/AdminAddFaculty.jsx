@@ -16,11 +16,11 @@ max-width:100%;
 display:flex;
 justify-content:center;
 align-items: center;
-background-color:white;
+background-color:#D3D3D3;
 `
 
 const ProfileBox = styled.div` 
-background-color:pink;
+background-color:#D3D3D3;
 width:50vw;
 height:90vh;
 box-sizing:border-box;

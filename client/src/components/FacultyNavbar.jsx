@@ -18,7 +18,7 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:10px 20px;
-background-color:white;
+background:linear-gradient(35deg,yellow, 50%,#30689f 50%);
 width:100%;
 `
 
@@ -33,7 +33,7 @@ align-items:center;
 
 const Logo = styled.h1`
 font-weight:bold;
-color:#0077b6;
+color:black;
 cursor:pointer;
 `
 
@@ -42,6 +42,8 @@ flex:1;
 display: flex;
 align-items: center;
 justify-content: flex-end;
+background:linear-gradient(-35deg,yellow 50%,tomato 50%);
+height: 80px;
 `
 
 const MenuItem = styled.div` 
