@@ -10,7 +10,7 @@ display:flex;
 height:100vh;
 width:100vw;
 max-width:100%;
-background-color:white;
+background:linear-gradient(55deg,Orange 50%,Yellow 50%)
 `
 
 const Header = styled.div` 
@@ -34,9 +34,9 @@ align-items: center;
 }
 >a{
     border-radius: 10px;
-    background-color: #0077b6;
+    background:linear-gradient(55deg,yellow 50%,tomato 50%);
     font: 400 1vmax;
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 0.5vmax;
     width: 30%;
@@ -62,7 +62,7 @@ align-items:flex-start;
 padding:2vmax;
 box-sizing:border-box;
 >h4{
-    color:#0077b6;
+    color:black;
     font:400 1.2vmax;
     text-align:center;
 };
