@@ -11,7 +11,7 @@ import styled from 'styled-components'
 const Container = styled.div` 
 width:100%;
 box-sizing:border-box;
-background-color: rgb(255, 255, 255);
+background:linear-gradient(55deg,yellow 50%,tomato 50%);
 display:flex;
 flex-direction:column;
 border-left: 1px solid rgba(0, 0, 0, 0.158);
@@ -22,7 +22,7 @@ const Header = styled.h1`
 font:400 2rem;
 padding:0.5vmax;
 box-sizing:border-box;
-color:#0077b6;
+color:maroon;
 transition: all 0.5s;
 margin: 2rem;
 text-align: center;

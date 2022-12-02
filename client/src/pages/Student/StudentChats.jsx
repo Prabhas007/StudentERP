@@ -10,6 +10,7 @@ const Container = styled.div`
 display:flex;
 align-items:center;
 justify-content:center;
+background:linear-gradient(55deg,yellow 50%,tomato 50%);
 width:100vw;
 `
 const Wrapper = styled.div` 
@@ -19,13 +20,14 @@ display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
+background:linear-gradient(55deg,yellow 50%,tomato 50%);
 `
 
 const Header = styled.h1` 
 font:400 2rem;
 padding:0.5vmax;
 box-sizing:border-box;
-color:#0077b6;
+color:maroon;
 transition: all 0.5s;
 margin: 2rem;
 text-align: center;
@@ -41,6 +43,7 @@ width:50%;
   cursor: pointer;
   margin-top: 10px;
   border-bottom: 1px solid #0077b6;
+  background:linear-gradient(55deg,yellow 50%,tomato 50%);
 `
 
 const ChatButton = styled.button` 
@@ -50,7 +53,7 @@ height:40px;
 border:none;
 border-radius:5px;
 cursor:pointer;
-background-color:#0077b6;
+background-color:black;
 color:white;
 `
 

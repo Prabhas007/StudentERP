@@ -13,7 +13,7 @@ import {useAlert} from 'react-alert'
 const Container = styled.div` 
 width:100%;
 box-sizing:border-box;
-background-color: rgb(255, 255, 255);
+background:linear-gradient(55deg,yellow 50%,tomato 50%);
 display:flex;
 flex-direction:column;
 border-left: 1px solid rgba(0, 0, 0, 0.158);
@@ -23,7 +23,7 @@ const Heading = styled.h1`
 font:400 2rem;
 padding:0.5vmax; 
 box-sizing:border-box;
-color:#0077b6;
+color:white;
 transition: all 0.5s;
 margin: 2rem;
 text-align: center;
@@ -36,7 +36,7 @@ flex-direction: column;
 align-items: center;
 margin: auto;
 padding: 3vmax;
-background-color: white;
+background:linear-gradient(55deg,yellow 50%,tomato 50%);
 `
 
 const FormItemContainer  = styled.div` 
@@ -72,14 +72,14 @@ margin: 2rem;
     position:absolute;
     transform:translateX(1vmax);
     font-size:1.6vmax; 
-    color:rgba(0,0,0,0.623)
+    color:maroon
 }
 `
 
 const Button = styled.button` 
     border-radius: 10px;
     border:none;
-    background-color: #0077b6;
+    background-color: black;
     font: 400 1vmax;
     color: white;
     text-decoration: none;

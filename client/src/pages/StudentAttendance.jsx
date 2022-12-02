@@ -11,7 +11,7 @@ import {fetchAttendance} from '../redux/actions/studentAction'
 const Container = styled.div` 
 width:100%;
 box-sizing:border-box;
-background-color: rgb(255, 255, 255);
+background:linear-gradient(55deg,yellow 50%,tomato 50%);
 display:flex;
 flex-direction:column;
 border-left: 1px solid rgba(0, 0, 0, 0.158);

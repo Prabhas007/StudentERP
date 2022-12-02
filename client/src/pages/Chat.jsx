@@ -22,7 +22,7 @@ display:flex;
 width:100%;
 align-items:center;
 justify-content:center;
-background-color:lightgrey;
+background:linear-gradient(55deg,yellow 50%,tomato 50%);
 `
 
 const Wrapper = styled.div` 
@@ -33,7 +33,7 @@ flex-direction: column;
   justify-content: space-between;
   width:80%;
   border-radius:10px;
-  background-color:white;
+  background:linear-gradient(55deg,yellow 50%,tomato 50%);
 `
 
 const ChatMessages = styled.div`
@@ -53,6 +53,7 @@ width:80%;
 height:70px;
 padding:10px;
 border-radius:20px;
+
 `
 const ChatSubmitButton = styled.button`
 width:100px;
@@ -60,8 +61,8 @@ height:40px;
 border:none;
 border-radius:5px;
 cursor:pointer;
-background-color:#0077b6;
-color:white;
+background-color:white;
+color:black;
 `
 
 

@@ -19,11 +19,11 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(231, 231, 231);
+  background:linear-gradient(55deg,yellow 50%,tomato 50%);
 `;
 
 const ProfileBox = styled.div`
-  background-color: white;
+background:linear-gradient(55deg,yellow 50%,tomato 50%);
   width: 25vw;
   height: 70vh;
   box-sizing: border-box;
@@ -31,7 +31,7 @@ const ProfileBox = styled.div`
 
 const ProfileHeader = styled.h1`
   text-align: center;
-  color: #0077b6;
+  color: white;
   font: 400 1.3vmax;
   padding: 1.3vmax;
   border-bottom: 1px solid #0077b6;
@@ -72,7 +72,7 @@ const ProfileInput = styled.input`
 `;
 const ProfileButton = styled.button`
   border: none;
-  background-color: #0077b6;
+  background-color:black;
   color: white;
   font: 300 0.9vmax;
   width: 100%;

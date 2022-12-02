@@ -11,7 +11,7 @@ display:flex;
 height:100vh;
 width:100vw;
 max-width:100%;
-background-color:white;
+background:linear-gradient(55deg,yellow 50%,tomato 50%);
 `
 
 const Header = styled.div` 
@@ -35,7 +35,7 @@ align-items: center;
 }
 >a{
     border-radius: 10px;
-    background-color: #0077b6;
+    background-color: black;
     font: 400 1vmax;
     color: white;
     text-decoration: none;

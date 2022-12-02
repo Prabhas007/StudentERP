@@ -15,11 +15,11 @@ max-width:100%;
 display:flex;
 justify-content:center;
 align-items: center;
-background-color:rgb(231,231,231);
+background:linear-gradient(55deg,yellow 50%,tomato 50%);
 `
 
 const ProfileBox = styled.div` 
-background-color:white;
+background:linear-gradient(55deg,yellow 50%,tomato 50%);
 width:25vw;
 height:70vh;
 box-sizing:border-box;
@@ -27,7 +27,7 @@ box-sizing:border-box;
 
 const ProfileHeader = styled.h1` 
 text-align:center;
-color:#0077b6;
+color:white;
 font:400 1.3vmax;
 padding:1.3vmax;
 border-bottom:1px solid #0077b6;
@@ -54,6 +54,7 @@ const ProfileName = styled.div`
     position:absolute;
     transform:translateX(1vmax);
     font-size:1.6vmax;
+    color:maroon;
 }
 `
 const ProfileEmail = styled.div` 
@@ -61,6 +62,7 @@ const ProfileEmail = styled.div`
     position:absolute;
     transform:translateX(1vmax);
     font-size:1.6vmax;
+    color:maroon;
 }
 `
 const ProfilePhone = styled.div` 
@@ -68,6 +70,7 @@ const ProfilePhone = styled.div`
     position:absolute;
     transform:translateX(1vmax);
     font-size:1.6vmax;
+    color:maroon;
 }
 `
 
@@ -94,7 +97,7 @@ outline:none;
 `
 const ProfileButton = styled.button` 
 border:none;
-background-color: #0077b6;
+background-color: black;
 color:white;
 font:300 0.9vmax;
 width: 100%;
