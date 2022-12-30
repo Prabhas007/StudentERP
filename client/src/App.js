@@ -40,6 +40,8 @@ import {
   Chat,
   StudentChats,
 } from "./pages";
+import FeedbackForm from "./pages/Student/FeedbackForm";
+import Submissions from "./pages/Faculty/Submissions";
 
 //Handle JWT Token
 if (window.localStorage.facultyToken) {
@@ -116,6 +118,11 @@ function App() {
             path="/student/performance"
             element={<StudentPerformance />}
           />
+          {/*<Route
+            exact
+            path="/student/feedbackform"
+            element={<FeedbackForm />}
+  />*/}
           <Route
             exact
             path="/student/attendance"
@@ -137,6 +144,11 @@ function App() {
             exact
             path="/faculty/update"
             element={<FacultyUpdateProfile />}
+          />
+          <Route
+            exact
+            path="/faculty/submissions"
+            element={<Submissions />}
           />
           <Route exact path="/faculty/marks" element={<FacultyUploadMarks />} />
           <Route

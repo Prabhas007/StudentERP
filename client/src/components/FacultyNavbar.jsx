@@ -73,6 +73,10 @@ const FacultyNavbar = () => {
       navigate('/faculty')
     }
 
+    const submissions = () => {
+      navigate('/faculty/submissions')
+    }
+
     const updateProfile = () => {
       navigate('/faculty/update')
     }
@@ -107,7 +111,7 @@ const FacultyNavbar = () => {
                        <Person onClick={updateProfile} style={{color:"#0077b6"}}/>
                      </MenuItem>
                      <MenuItem>
-                       <Dashboard onClick={home} style={{color:"#0077b6"}}/>
+                       <Dashboard onClick={submissions} style={{color:"#0077b6"}}/>
                      </MenuItem>
                      <MenuItem>
                        <VpnKey onClick={updatePassword} style={{color:"#0077b6"}}/>

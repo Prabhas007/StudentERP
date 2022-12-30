@@ -11,7 +11,7 @@ display:flex;
 height:100vh;
 width:100vw;
 max-width:100%;
-background:linear-gradient(55deg,yellow 50%,tomato 50%);
+background:linear-gradient(55deg,skyblue 50%,tomato 50%);
 `
 
 const Header = styled.div` 

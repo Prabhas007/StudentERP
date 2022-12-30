@@ -1,15 +1,27 @@
 const nodemailer = require("nodemailer");
+var smtpTransport = require('nodemailer-smtp-transport');
 const dotenv = require('dotenv');
 dotenv.config();
 
+{/*var smtpTransport = require('nodemailer-smtp-transport');
+
+var transport = nodemailer.createTransport(smtpTransport({
+    host: "smtp.gmail.com",
+    service: 'gmail',
+    auth: {
+        user: '2100030406cseh@gmail.com', 
+        pass: 'venkat999MS@'
+    }
+}));*/}
 const transport = nodemailer.createTransport({
-  host: "smtp.gmail.com",
+  host: 'smtp.gmail.com',
   port: 465,
-  service: "gmail",
+  service: 'gmail',
+  secure: true,
   auth: {
-    user: process.env.EMAIL_USERNAME,
-    pass: process.env.EMAIL_PASSWORD,
-  },
+    user: '2100030215cseh@gmail.com',
+    pass: 'xckvgthrdjljrspy'
+  }
 });
 
 const sendEmail = async (email, secretToken, mode) => {

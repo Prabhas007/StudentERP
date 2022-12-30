@@ -127,6 +127,10 @@ const StudentNavbar = () => {
     const attendance = () => {
       navigate('/student/attendance')
     }
+
+    const feedbackform = () => {
+      navigate('/student/FeedbackForm')
+    }
   
     const searchStudent = () => {
       navigate('/student/search')
@@ -163,6 +167,9 @@ const StudentNavbar = () => {
                      <MenuItem>
                        <Group onClick={attendance} style={{color:"#0077b6"}}/>
                      </MenuItem>
+                     {/*<MenuItem>
+                       <Group onClick={feedbackform} style={{color:"#0077b6"}}/>
+                     </MenuItem>*/}
                      <MenuItem>
                        <Ballot onClick={subjectList} style={{color:"#0077b6"}}/>
                      </MenuItem>
